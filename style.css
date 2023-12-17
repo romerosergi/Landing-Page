@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.header {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3vw;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+li a:hover {
+    color: grey;
+}
+.btn-login {
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: .5vw 2vw;
+    border-radius: 6px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.btn-login:hover {
+    background-color: transparent;
+    color: white;
+}
+/* Seccion Home */
+.home {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.title-home {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    color: white;
+    text-shadow: 0 0 12px black;
+}
+.description-home {
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    color: white;
+}
+/* Seccion Services */
+.services {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: rgb(31, 36, 68);
+    box-shadow: 0 0 20px black;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    margin: 0 2vw;
+    height: 25vw;
+    width: 21vw;
+    background-color: rgb(44, 51, 96);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.515);
+    border-radius: 6px;
+}
+#icon-serv {
+    position: relative;
+    margin-bottom: 2vw;
+    font-size: 6vw;
+    color: white;
+    text-shadow: 0 0 8px black;
+}
+.desc-serv {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0vw 2vw;
+}
+/* Seccion About */
+.about{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.text-about {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 60%;
+    text-shadow: 0 0 8px black;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.text-about h2 {
+    font-size: 4em;
+}
+.text-about h4 {
+    font-size: 1em;
+}
+.img-about img {
+    width: 80%;
+}
+
+/* Seccion Contacto */
+.contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgb(31, 36, 68);
+}
